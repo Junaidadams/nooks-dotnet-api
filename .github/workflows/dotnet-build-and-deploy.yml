@@ -1,0 +1,60 @@
+name: .NET Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgis/postgis:16-3.4
+        env:
+          POSTGRES_DB: nooks_api
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: dev
+        options: >-
+          --health-cmd "pg_isready -U postgres -d nooks_api"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore NooksApi.sln
+
+      - name: Build
+        run: dotnet build NooksApi.sln --no-restore -c Release
+
+      - name: Run tests
+        run: dotnet test NooksApi.sln --no-build -c Release
+        env:
+          ConnectionStrings__Default: Host=localhost;Port=5432;Database=nooks_api;Username=postgres;Password=dev
+          ASPNETCORE_ENVIRONMENT: Development
+          NOOKS_SKIP_MIGRATIONS: true
+
+  publish:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Publish
+        run: dotnet publish NooksApi/NooksApi.csproj -c Release -o ./publish

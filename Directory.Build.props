@@ -1,0 +1,12 @@
+<Project>
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningsNotAsErrors>$(WarningsNotAsErrors);NU1701;NU1507;CA1000</WarningsNotAsErrors>
+        <NoWarn>$(NoWarn);CA1848;CA1305;CA1304;CA1310;CA1311</NoWarn>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+</Project>

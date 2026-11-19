@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.0.0
+MinimumVisualStudioVersion = 10.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NooksApi", "NooksApi\NooksApi.csproj", "{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE7F5A1D-5A48-408D-86C7-A00BBB67F5C6}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NooksApi.Tests", "tests\NooksApi.Tests\NooksApi.Tests.csproj", "{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|x64.Build.0 = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Debug|x86.Build.0 = Debug|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|x64.ActiveCfg = Release|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|x64.Build.0 = Release|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|x86.ActiveCfg = Release|Any CPU
+		{EACF3F54-10A0-46EE-B8A4-CB41C8A6CB09}.Release|x86.Build.0 = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|x64.Build.0 = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Debug|x86.Build.0 = Debug|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|x64.ActiveCfg = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|x64.Build.0 = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|x86.ActiveCfg = Release|Any CPU
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88409BF7-1D1A-4F11-AC88-F1C2ADDD724B} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+	EndGlobalSection
+EndGlobal

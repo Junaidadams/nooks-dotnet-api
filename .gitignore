@@ -1,0 +1,95 @@
+# Build output
+bin/
+obj/
+bin\\Debug/
+bin\\Release/
+*.exe
+*.dll
+*.pdb
+*.cache
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+*.csproj.*.cache
+
+# .NET Core and NuGet
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+logs/
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Test results
+TestResults/
+*.trx
+*.xml
+
+# User-specific IDE settings
+*.idea/
+*.vscode/
+*.vsconfig
+
+# Sensitive data
+*.config
+!/.config/
+*.secrets.json
+.env
+deploy/**/.env
+deploy/**/service-account-key.json
+
+# Python (deploy tooling)
+__pycache__/
+*.pyc
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Rider (JetBrains) specific
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+resharper-host/
+*.ReSharper*
+_ReSharper*/
+*.DotSettings
+*.DotSettings.user
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+*docs
+*Temp
+script.sql
+.rules
+**.claude
+**CLAUDE.md
+**GEMINI.md
+**AGENTS.md
+**napkin.md
+**.conductor
+**.run
+db-dump.sql
+scripts/*
+test-data/*
+PLAN.md

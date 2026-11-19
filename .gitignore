@@ -39,7 +39,6 @@ bower_components/
 # Test results
 TestResults/
 *.trx
-*.xml
 
 # User-specific IDE settings
 *.idea/
@@ -47,8 +46,6 @@ TestResults/
 *.vsconfig
 
 # Sensitive data
-*.config
-!/.config/
 *.secrets.json
 .env
 deploy/**/.env
